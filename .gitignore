@@ -59,3 +59,5 @@ bld/
 *.exe
 *.out
 *.app
+!premake5.exe
+
