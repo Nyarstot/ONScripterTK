@@ -30,7 +30,7 @@
 // Modified by Mion, December 2009, to support creating new archives
 // via nsamake
 
-#include "ONScripterTK/DirectReader.h"
+#include "OpenARC/DirectReader.h"
 #include <bzlib.h>
 #if !defined(WIN32) && !defined(MACOS9) && !defined(PSP) && !defined(__OS2__)
 #include <dirent.h>

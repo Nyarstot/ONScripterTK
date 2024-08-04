@@ -42,10 +42,10 @@
 #endif
 
 #ifdef SAR
-#include "SarReader.h"
+#include "OpenARC/SarReader.h"
 typedef SarReader reader;
 #else
-#include "ONScripterTK/NsaReader.h"
+#include "OpenARC/NsaReader.h"
 typedef NsaReader reader;
 #endif
 

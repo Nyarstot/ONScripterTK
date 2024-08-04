@@ -30,7 +30,7 @@
 // Modified by Mion, December 2009, to support NS2 archives and allow
 // creating new archives via nsamake, ns2make & sarmake
 
-#include "ONScripterTK/SarReader.h"
+#include "OpenARC/SarReader.h"
 #define WRITE_LENGTH 4096
 
 SarReader::SarReader( DirPaths &path, const unsigned char *key_table )

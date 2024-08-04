@@ -32,7 +32,7 @@
 #ifndef __NSA_READER_H__
 #define __NSA_READER_H__
 
-#include "ONScripterTK/SarReader.h"
+#include "OpenARC/SarReader.h"
 #define MAX_EXTRA_ARCHIVE 9
 #define MAX_NS2_ARCHIVE_NUM 99
 #define MAX_NS2_ARCHIVE 100

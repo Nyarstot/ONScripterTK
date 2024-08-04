@@ -36,10 +36,10 @@
 #include <errno.h>
 
 #ifdef SAR
-#include "ONScripterTK/SarReader.h"
+#include "OpenARC/SarReader.h"
 typedef SarReader reader;
 #else
-#include "ONScripterTK/NsaReader.h"
+#include "OpenARC/NsaReader.h"
 typedef NsaReader reader;
 #endif
 

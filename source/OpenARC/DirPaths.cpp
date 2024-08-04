@@ -22,7 +22,7 @@
  *  59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include "ONScripterTK/DirPaths.h"
+#include "OpenARC/DirPaths.h"
 
 DirPaths::DirPaths( const char *new_paths )
 : num_paths(0), paths(NULL), all_paths(NULL)

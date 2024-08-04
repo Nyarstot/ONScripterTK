@@ -1,6 +1,6 @@
 include "dependencies.lua"
 
-workspace "ONScripterTK"
+workspace "OpenARC"
     architecture "x64"
     startproject "arcmake"
     configurations {"Debug", "Release"}
@@ -21,9 +21,9 @@ workspace "ONScripterTK"
 
         files
         {
-            "%{wks.location}/include/ONScripterTK/*.h",
-            "%{wks.location}/source/ONScripterTK/*.cpp",
-            "%{wks.location}/source/ONScripterTK/tools/arcmake.cpp"
+            "%{wks.location}/include/OpenARC/*.h",
+            "%{wks.location}/source/OpenARC/*.cpp",
+            "%{wks.location}/source/OpenARC/tools/arcmake.cpp"
         }
 
         links
@@ -72,9 +72,9 @@ workspace "ONScripterTK"
 
         files
         {
-            "%{wks.location}/include/ONScripterTK/*.h",
-            "%{wks.location}/source/ONScripterTK/*.cpp",
-            "%{wks.location}/source/ONScripterTK/tools/arcdec.cpp"
+            "%{wks.location}/include/OpenARC/*.h",
+            "%{wks.location}/source/OpenARC/*.cpp",
+            "%{wks.location}/source/OpenARC/tools/arcdec.cpp"
         }
 
         links

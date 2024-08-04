@@ -30,7 +30,7 @@
 // Modified by Mion, December 2009, to support NS2 archives and allow
 // creating new archives via nsamake and ns2make
 
-#include "ONScripterTK/NsaReader.h"
+#include "OpenARC/NsaReader.h"
 #include <cstdio>
 #include <string.h>
 #define NSA_ARCHIVE_NAME "arc"

@@ -30,8 +30,8 @@
 #ifndef __DIRECT_READER_H__
 #define __DIRECT_READER_H__
 
-#include "ONScripterTK/BaseReader.h"
-#include "ONScripterTK/DirPaths.h"
+#include "OpenARC/BaseReader.h"
+#include "OpenARC/DirPaths.h"
 #include <string.h>
 
 #define MAX_FILE_NAME_LENGTH 256

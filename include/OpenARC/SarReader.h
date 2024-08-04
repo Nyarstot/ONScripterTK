@@ -32,7 +32,7 @@
 #ifndef __SAR_READER_H__
 #define __SAR_READER_H__
 
-#include "ONScripterTK/DirectReader.h"
+#include "OpenARC/DirectReader.h"
 
 class SarReader : public DirectReader
 {
