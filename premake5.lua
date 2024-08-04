@@ -11,7 +11,7 @@ workspace "OpenARC"
 
     project "arcmake"
         location "./"
-        kind "ConsoleApp"
+        kind "SharedLib"
         language "C++"
         cppdialect "C++17"
         staticruntime "on"
@@ -23,7 +23,8 @@ workspace "OpenARC"
         {
             "%{wks.location}/include/OpenARC/*.h",
             "%{wks.location}/source/OpenARC/*.cpp",
-            "%{wks.location}/source/OpenARC/tools/arcmake.cpp"
+            "%{wks.location}/include/OpenARC/tools/ArcHandler.h",
+            "%{wks.location}/source/OpenARC/tools/ArcHandler.cpp"
         }
 
         links
@@ -41,6 +42,8 @@ workspace "OpenARC"
         defines
         {
             -- "UTF8_FILESYSTEM",
+            -- "BULD_DLL"
+            "BUILD_PY_DLL",
             "TOOLS_BUILD",
             "NSA"
         }
@@ -62,7 +65,7 @@ workspace "OpenARC"
 
     project "arcdec"
         location "./"
-        kind "ConsoleApp"
+        kind "SharedLib"
         language "C++"
         cppdialect "C++17"
         staticruntime "on"
@@ -74,7 +77,8 @@ workspace "OpenARC"
         {
             "%{wks.location}/include/OpenARC/*.h",
             "%{wks.location}/source/OpenARC/*.cpp",
-            "%{wks.location}/source/OpenARC/tools/arcdec.cpp"
+            "%{wks.location}/include/OpenARC/tools/ArcHandler.h",
+            "%{wks.location}/source/OpenARC/tools/ArcHandler.cpp"
         }
 
         links
@@ -92,6 +96,8 @@ workspace "OpenARC"
         defines
         {
             -- "UTF8_FILESYSTEM",
+            -- "BUILD_DLL",
+            "BUILD_PY_DLL",
             "TOOLS_BUILD",
             "NSA"
         }

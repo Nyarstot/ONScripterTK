@@ -214,3 +214,25 @@ void ArcHandler::decodeArc(char* archive_path, char* outdir)
     decodeSAR(archive_path, outdir);
     return;
 }
+
+// Python export functions
+
+ARC_API ArcHandler* create(int archiveType) {
+    return new ArcHandler((ArchiveType)archiveType);
+}
+
+ARC_API void destroy(ArcHandler* arcHandler) {
+    delete arcHandler;
+}
+
+ARC_API void setNSAOffset(ArcHandler* arcHandler, int offset) {
+    arcHandler->setNSAOffset(offset);
+}
+
+ARC_API int getNSAOffset(ArcHandler* arcHandler) {
+    return arcHandler->getNSAOffset();
+}
+
+ARC_API void decodeArc(ArcHandler* arcHandler, char* archive_path, char* outdir) {
+    arcHandler->decodeArc(archive_path, outdir);
+}

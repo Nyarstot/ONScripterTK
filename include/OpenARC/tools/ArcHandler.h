@@ -20,6 +20,8 @@
     #include <Windows.h>
 
     #ifdef BUILD_DLL
+        #define ARC_API __declspec(dllexport)
+    #elif defined BUILD_PY_DLL
         #define ARC_API extern "C" __declspec(dllexport)
     #else
         #define ARC_API __declspec(dllimport)
@@ -47,7 +49,7 @@ enum ArchiveType
 };
 
 
-class ARC_API ArcHandler final
+ARC_API class ArcHandler final
 {
     struct NsaReaderData
     {
